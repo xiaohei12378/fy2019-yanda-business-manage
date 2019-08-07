@@ -51,7 +51,7 @@ public class AuthorityInterceptor implements HandlerInterceptor {
             UserInfo userInfoLogin=userService.login(userInfo);
           //UserInfo userInfo=loginService.login(username,password);
             if (userInfoLogin != null) {//登录成功
-                session.setAttribute("userinfo",userInfoLogin);
+                session.setAttribute(Const.CURRENT_USER,userInfoLogin);
                 System.out.println("========================0===========================");
                 return true;
             }

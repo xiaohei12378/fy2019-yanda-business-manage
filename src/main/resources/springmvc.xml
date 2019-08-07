@@ -31,13 +31,13 @@
     </bean>
 
     <mvc:interceptors>
-        <mvc:interceptor>
-            <mvc:mapping path="/user/**"/>
-            <mvc:exclude-mapping path="/user/login"/>
-            <bean class="com.neuedu.interceptors.AuthorityInterceptor"></bean>
+    <mvc:interceptor>
+        <mvc:mapping path="/user/**"/>
+        <mvc:exclude-mapping path="/user/login"/>
+        <bean class="com.neuedu.interceptors.AuthorityInterceptor"></bean>
 
-        </mvc:interceptor>
+    </mvc:interceptor>
 
-    </mvc:interceptors>
+</mvc:interceptors>
 
 </beans>

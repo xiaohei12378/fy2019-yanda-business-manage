@@ -14,6 +14,5 @@ public interface ICategoryService {
     public int deleteCategory(int categoryId) throws MyException;
     public int updateCategory(Category category) throws MyException;
     public List<Category> findAll() throws MyException;
-
     public Category findCategoryById(int categoryId ) throws  MyException;
 }

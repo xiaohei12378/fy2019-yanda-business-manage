@@ -15,7 +15,7 @@ public class CategoryServiceImpl implements ICategoryService {
     CategoryMapper categoryMapper;
     @Override
     public int addCategory(Category category) throws MyException {
-        return 0;
+        return categoryMapper.insert(category);
     }
 
     @Override

@@ -14,9 +14,11 @@
 <head>
     <title>Title</title>
     <table>
+        <a href="/user/category/add">添加类别</a>
+
         <thead>
             <th>类别id</th>
-            <th>类别名称</th>
+            <th>类别名称</th>a
             <th>所属父类</th>
             <th>类别状态</th>
             <th>创建时间</th>
@@ -38,6 +40,7 @@
                 </th>
             </tr>
         </c:forEach>
+
 
     </table>
 

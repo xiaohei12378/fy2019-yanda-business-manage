@@ -2,6 +2,7 @@ package com.neuedu.controller;
 
 import com.neuedu.pojo.Category;
 import com.neuedu.service.ICategoryService;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -68,7 +69,7 @@ public class CategoryController {
  */
 
     @RequestMapping(value = "find/{id}",method = RequestMethod.GET)
-    public  String Delete(@PathVariable("id") Integer categoryId, HttpServletRequest request ){
+    public  String Delete(@PathVariable("id") Integer categoryId){
 
 
 
@@ -81,8 +82,26 @@ public class CategoryController {
 
       return "redirect: /user/category/find";
     }
+/**
+ * 类别添加
+ */
+@RequestMapping(value = "add",method = RequestMethod.GET)
+public  String add( ){
 
+    return "categoryadd";
 
+}
+
+    @RequestMapping(value = "add",method = RequestMethod.POST)
+    public  String add( Category category){
+        int count= categoryService.addCategory(category);
+        if (count>0)
+            System.out.println("chenggong");
+        else
+            System.out.println("shibai");
+
+        return "redirect: /user/category/find";
+    }
 
 
 }
