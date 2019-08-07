@@ -52,11 +52,11 @@ public class AuthorityInterceptor implements HandlerInterceptor {
           //UserInfo userInfo=loginService.login(username,password);
             if (userInfoLogin != null) {//登录成功
                 session.setAttribute(Const.CURRENT_USER,userInfoLogin);
-                System.out.println("========================0===========================");
+                System.out.println("========================cookie登录===========================");
                 return true;
             }
             if (session.getAttribute(Const.CURRENT_USER) != null) {
-                System.out.println("=======================1============================");
+                System.out.println("======================session登录============================");
                 return true;
             }
 

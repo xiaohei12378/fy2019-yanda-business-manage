@@ -6,6 +6,7 @@ import com.neuedu.service.IUserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -13,6 +14,8 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.UnsupportedEncodingException;
+import java.util.List;
 
 @Controller
 @RequestMapping("/user/")
@@ -52,6 +55,86 @@ public class UserController {
     @RequestMapping("home")
     public String home(){
         return "home";
+    }
+
+    @RequestMapping("find")
+    public  String findAll(HttpSession session){
+        List<UserInfo> userInfoList =userService.findAll();
+
+        session.setAttribute("userInfolist",userInfoList);
+        return "usermss";
+    }
+
+
+
+
+
+    @RequestMapping(value = "add",method = RequestMethod.GET)
+    public  String add( ){
+
+        return "register";
+
+    }
+
+    @RequestMapping(value = "add",method = RequestMethod.POST)
+    public  String add( UserInfo userInfo){
+        int count= userService.addUser(userInfo);
+        if (count>0)
+            System.out.println("chenggong");
+        else
+            System.out.println("shibai");
+
+        return "redirect: /user/find";
+    }
+
+
+
+    /**
+     *
+     *用户删除
+     */
+
+    @RequestMapping(value = "find/{id}",method = RequestMethod.GET)
+    public  String Delete(@PathVariable("id") Integer userId){
+
+
+        int count= userService.deleteUser(userId);
+        if (count>0)
+            System.out.println("chenggong");
+        else
+            System.out.println("shibai");
+
+        return "redirect: /user/find";
+    }
+
+
+    /**
+     *
+     *用户修改
+     */
+    @RequestMapping(value = "update/{id}",method = RequestMethod.GET)
+    public  String Update(@PathVariable("id") Integer userId, HttpServletRequest request ){
+
+        UserInfo userInfo=  userService.findUserById(userId);
+
+        request.setAttribute("userinfo",userInfo);
+
+
+        return "userupdate";
+    }
+    @RequestMapping(value = "update/{id}",method = RequestMethod.POST)
+    public  String Update(UserInfo userInfo , HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException {
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html; charset=UTF-8");
+
+
+        int count=userService.updateUser(userInfo);
+        if(count>0)
+        {
+            return "redirect: /user/find";
+        }
+
+        return "userupdate";
     }
 
 

@@ -44,10 +44,10 @@
      <if test="category.parentId!=null">
     parent_id = #{category.parentId,jdbcType=INTEGER},
      </if>
-     <if test="category.parentId!=null">
+     <if test="category.name!=null">
       name = #{category.name,jdbcType=VARCHAR},
      </if>
-     <if test="category.parentId!=null">
+     <if test="category.status!=null">
       status = #{category.status,jdbcType=BIT},
      </if>
 
