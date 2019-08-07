@@ -49,4 +49,6 @@ public interface UserInfoMapper {
 
     int exsitsUsername(@Param("username")String username);
     UserInfo findByUsernameAndPassword(@Param("user")UserInfo userInfo);
+
+
 }

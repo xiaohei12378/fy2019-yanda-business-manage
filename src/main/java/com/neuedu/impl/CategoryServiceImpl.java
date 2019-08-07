@@ -25,7 +25,9 @@ public class CategoryServiceImpl implements ICategoryService {
 
     @Override
     public int updateCategory(Category category) throws MyException {
-        return 0;
+
+
+        return categoryMapper.updateByPrimaryKey(category);
     }
 
     @Override

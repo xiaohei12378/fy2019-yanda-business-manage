@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 @Controller
@@ -38,9 +40,17 @@ public class CategoryController {
         return "categoryupdate";
     }
     @RequestMapping(value = "update/{id}",method = RequestMethod.POST)
-    public  String Update(Category category ){
+    public  String Update(Category category , HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException {
+
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html; charset=UTF-8");
 
 
+        int count=categoryService.updateCategory(category);
+        if(count>0)
+        {
+            return "redirect: /user/category/find";
+        }
 
         return "categoryupdate";
     }

@@ -92,5 +92,10 @@
   </select>
 
 
+  <select id="findByUsername" parameterType="String" resultType="com.neuedu.pojo.UserInfo">
 
+    SELECT id, username, password, email, phone, question, answer, role, create_time,
+    update_time FROM neuedu_user WHERE username=#{username}
+
+  </select>
 </mapper>

@@ -6,4 +6,5 @@ import org.springframework.stereotype.Service;
 
 public interface IUserService {
     public UserInfo login(UserInfo userInfo) throws MyException;
+
 }

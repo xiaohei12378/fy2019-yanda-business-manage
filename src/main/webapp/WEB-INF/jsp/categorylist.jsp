@@ -33,7 +33,7 @@
                 <th>${category.createTime}</th>
                 <th>${category.updateTime}</th>
                 <th>
-                    <a href="update/${category.id}">修改</a>
+                    <a href="/user/category/update/${category.id}">修改</a>
                     <a href="">删除</a>
                 </th>
             </tr>

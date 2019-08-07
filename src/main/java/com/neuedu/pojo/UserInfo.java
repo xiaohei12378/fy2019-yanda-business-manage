@@ -17,6 +17,7 @@ public class UserInfo {
      *
      * @mbggenerated
      */
+
     private String username;
 
     /**
