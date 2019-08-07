@@ -44,21 +44,25 @@ public class AuthorityInterceptor implements HandlerInterceptor {
 
             }
         }
+        if (username != null && password != null) {//根据用户名和密码自动登录
+            UserInfo userInfo=new UserInfo();
+            userInfo.setUsername(username);
+            userInfo.setPassword(password);
+            UserInfo userInfoLogin=userService.login(userInfo);
+          //UserInfo userInfo=loginService.login(username,password);
+            if (userInfoLogin != null) {//登录成功
+                session.setAttribute("userinfo",userInfoLogin);
+                System.out.println("========================0===========================");
+                return true;
+            }
+            if (session.getAttribute(Const.CURRENT_USER) != null) {
+                System.out.println("=======================1============================");
+                return true;
+            }
 
-//        if (username != null && password != null) {//根据用户名和密码自动登录
-//
-//            // UserInfo userInfo=loginService.login(username,password);
-//            if (userInfo != null) {//登录成功
-//                session.setAttribute("userinfo", userInfo);
-//
-//            }
-          //  if (session.getAttribute(Const.CURRENT_USER) == null) {
-                //response.sendRedirect(request.getContextPath() + "/login");
-           //     System.out.println("======拦截==========");
-            //    return false;
-         //   }
-//
-//        }
-        return true;
+        }
+        System.out.println("======拦截==========");
+        response.sendRedirect("/user/login");
+        return false;
     }
 }

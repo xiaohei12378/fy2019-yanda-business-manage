@@ -20,7 +20,10 @@ import java.util.List;
 public class CategoryController {
     @Autowired
     ICategoryService categoryService;
-
+    /**
+     *
+     * 把数据库的类别信息展示到页面
+     */
     @RequestMapping("find")
     public  String findAll(HttpSession session){
         List<Category> categoryList =categoryService.findAll();
@@ -29,6 +32,10 @@ public class CategoryController {
         return "categorylist";
     }
 
+    /**
+     *
+     * 类别修改
+     */
     @RequestMapping(value = "update/{id}",method = RequestMethod.GET)
     public  String Update(@PathVariable("id") Integer categoryId, HttpServletRequest request ){
 
@@ -55,6 +62,10 @@ public class CategoryController {
     }
 
 
+/**
+ *
+ * 类别删除
+ */
 
     @RequestMapping(value = "find/{id}",method = RequestMethod.GET)
     public  String Delete(@PathVariable("id") Integer categoryId, HttpServletRequest request ){
@@ -73,19 +84,5 @@ public class CategoryController {
 
 
 
-//    @RequestMapping(value = "find/{id}",method = RequestMethod.POST)
-//    public  String Delete(Category category , HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException {
-//        request.setCharacterEncoding("UTF-8");
-//        response.setContentType("text/html; charset=UTF-8");
-//
-//
-//        int count=categoryService.updateCategory(category);
-//        if(count>0)
-//        {
-//            return "redirect: /user/category/find";
-//        }
-//
-//        return "categoryupdate";
-//    }
 
 }
