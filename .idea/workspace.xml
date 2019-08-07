@@ -7,25 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="736e7b47-618d-4af9-8024-4a4415de9f83" name="默认" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/annotation/Column.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/annotation/Table.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/controller/CategoryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/controller/CategoryController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/dao/CategoryMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/dao/CategoryMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/dao/UserInfoMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/dao/UserInfoMapper.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/impl/CategoryServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/impl/CategoryServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/impl/UserServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/interceptors/AuthorityInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/interceptors/AuthorityInterceptor.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/pojo/Category.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/pojo/Category.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/pojo/UserInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/pojo/UserInfo.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/service/IUserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/service/IUserService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/neuedu/dao/CategoryMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/neuedu/dao/CategoryMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/neuedu/dao/UserInfoMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/neuedu/dao/UserInfoMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/springmvc.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/categorylist.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/categorylist.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,21 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="CategoryController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CategoryController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/CategoryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+            <state relative-caret-position="359">
+              <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -61,8 +35,8 @@
       <file leaf-file-name="ICategoryService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/ICategoryService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="276">
+              <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -71,19 +45,65 @@
       <file leaf-file-name="CategoryServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/impl/CategoryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="198">
+              <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/pojo/Category.java">
+      <file leaf-file-name="categorylist.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/categorylist.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-713">
-              <caret line="157" column="33" lean-forward="false" selection-start-line="157" selection-start-column="33" selection-end-line="157" selection-end-column="33" />
+            <state relative-caret-position="299">
+              <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/CategoryMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CartMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/CartMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-391">
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categoryupdate.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/categoryupdate.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CartMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/dao/CartMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1083">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1565067706311" expanded="true" signature="1108:1169" ph="delete from neuedu_cart... " />
+                <marker date="1565067706311" expanded="true" signature="1377:1721" ph="insert into neuedu_cart... " />
+                <marker date="1565067706311" expanded="true" signature="1941:2292" ph="update neuedu_cart... " />
+                <marker date="1565067706311" expanded="true" signature="2535:2669" ph="select id, u... neuedu_cart" />
+                <marker date="1565067706311" expanded="true" signature="2869:2965" ph="select id, u... neuedu_cart" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,7 +111,7 @@
       <file leaf-file-name="CategoryMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/dao/CategoryMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
+            <state relative-caret-position="182">
               <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
                 <marker date="1565145564499" expanded="true" signature="1106:1171" ph="delete from neuedu_category... " />
@@ -100,16 +120,6 @@
                 <marker date="1565145564499" expanded="true" signature="2612:2747" ph="select id, p... neuedu_category" />
                 <marker date="1565145564499" expanded="true" signature="2947:3044" ph="select id, p... neuedu_category" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoryMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/CategoryMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -158,16 +168,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/interceptors/AuthorityInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/categorylist.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/springmvc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/pojo/UserInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/annotation/Table.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/pojo/Category.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/dao/CategoryMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/impl/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/neuedu/dao/CategoryMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/controller/CategoryController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/impl/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/categorylist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/controller/CategoryController.java" />
       </list>
     </option>
   </component>
@@ -208,9 +218,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="610" />
-    <option name="y" value="71" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="788" />
+    <option name="y" value="45" />
     <option name="width" value="996" />
     <option name="height" value="961" />
   </component>
@@ -640,15 +650,15 @@
       <workItem from="1565099401977" duration="5053000" />
       <workItem from="1565105216110" duration="6649000" />
       <workItem from="1565136852242" duration="5233000" />
-      <workItem from="1565143941676" duration="2788000" />
+      <workItem from="1565143941676" duration="4682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42023000" />
+    <option name="totallyTimeSpent" value="43917000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="610" y="71" width="996" height="961" extended-state="1" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -668,10 +678,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2594524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23302108" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.335141" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16577253" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="设计器" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -730,14 +740,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="48" column="19" lean-forward="false" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/categorylist.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="759">
@@ -822,13 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/CartMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-529">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1012,22 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/categoryupdate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/categorylist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -1083,14 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/CategoryMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/pojo/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-713">
@@ -1099,25 +1070,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/ICategoryService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="3">
+          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/impl/CategoryServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/dao/CartMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="-1083">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1565067706311" expanded="true" signature="1108:1169" ph="delete from neuedu_cart... " />
+            <marker date="1565067706311" expanded="true" signature="1377:1721" ph="insert into neuedu_cart... " />
+            <marker date="1565067706311" expanded="true" signature="1941:2292" ph="update neuedu_cart... " />
+            <marker date="1565067706311" expanded="true" signature="2535:2669" ph="select id, u... neuedu_cart" />
+            <marker date="1565067706311" expanded="true" signature="2869:2965" ph="select id, u... neuedu_cart" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/dao/CategoryMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
+        <state relative-caret-position="182">
           <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <marker date="1565145564499" expanded="true" signature="1106:1171" ph="delete from neuedu_category... " />
@@ -1129,18 +1106,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/CategoryController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/ICategoryService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="276">
+          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/categorylist.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+        <state relative-caret-position="299">
+          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/CategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/CartMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/categoryupdate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
           <folding />
         </state>
       </provider>

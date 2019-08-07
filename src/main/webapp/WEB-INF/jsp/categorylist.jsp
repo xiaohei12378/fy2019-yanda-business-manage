@@ -34,7 +34,7 @@
                 <th>${category.updateTime}</th>
                 <th>
                     <a href="/user/category/update/${category.id}">修改</a>
-                    <a href="">删除</a>
+                    <a href="/user/category/find/${category.id}">删除</a>
                 </th>
             </tr>
         </c:forEach>

@@ -20,7 +20,7 @@ public class CategoryServiceImpl implements ICategoryService {
 
     @Override
     public int deleteCategory(int categoryId) throws MyException {
-        return 0;
+        return categoryMapper.deleteByPrimaryKey(categoryId);
     }
 
     @Override
