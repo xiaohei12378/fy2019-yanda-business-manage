@@ -9,5 +9,6 @@ public interface IProductService {
     public int addProduct(Product product) throws MyException;
     public int deleteProduct( int productId) throws MyException;
     public int updateProduct(Product product) throws MyException;
-    public List<Product> find(Product product) throws MyException;
+    public List<Product> findAll() throws MyException;
+    public Product findProductById(int productId ) throws  MyException;
 }
