@@ -15,16 +15,13 @@
 <form action="" method="post">
 
     <input type="hidden" name="id" value="${product.id}"></br>
-
-
-    ID<input type="text" name="id"/><br>
-    categoryId<input type="text" name="categoryId"/><br>
-    name<input type="text" name="name"/><br>
-    subtitle<input type="text" name="subtitle"/><br>
-    detail<input type="text" name="detail"/><br>
-    price<input type="text" name="price"/><br>
-    stock<input type="text" name="stock"/><br>
-    status<input type="text" name="status"/><br>
+    categoryId<input type="text" name="categoryId" value="${product.categoryId}"><br>
+    name<input type="text" name="name" value="${product.name}"><br>
+    subtitle<input type="text" name="subtitle" value="${product.subtitle}"><br>
+    detail<input type="text" name="detail" value="${product.detail}"><br>
+    price<input type="text" name="price" value="${product.price}"><br>
+    stock<input type="text" name="stock" value="${product.stock}"><br>
+    status<input type="text" name="status" value="${product.status}"><br>
     <input type="submit" value="修改"></br>
 
 </form>

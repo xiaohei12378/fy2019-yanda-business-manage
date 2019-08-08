@@ -71,9 +71,9 @@ public class ProductController {
      * 商品修改
      */
     @RequestMapping(value = "update/{id}",method = RequestMethod.GET)
-    public  String Update(@PathVariable("id") Integer categoryId, HttpServletRequest request ){
+    public  String Update(@PathVariable("id") Integer productId, HttpServletRequest request ){
 
-        Product product=  productService.findProductById(categoryId);
+        Product product=  productService.findProductById(productId);
 
         request.setAttribute("product",product);
 
@@ -89,7 +89,7 @@ public class ProductController {
         int count=productService.updateProduct(product);
         if(count>0)
         {
-            return "redirect: /user/category/find";
+            return "redirect: /user/product/find";
         }
 
         return "productupdate";
