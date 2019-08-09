@@ -24,6 +24,11 @@ public class UserController {
     @Autowired
     IUserService userService;
 
+    /**
+     *
+     *用户登录
+     *
+     **/
    @RequestMapping(value = "/login",method = RequestMethod.GET)
    public  String login(){
     return "login";
@@ -32,7 +37,7 @@ public class UserController {
     public  String login(UserInfo userInfo, HttpSession session, HttpServletResponse response, HttpServletRequest request){
 
         UserInfo loginUserInfo =userService.login(userInfo);
-        System.out.println(loginUserInfo);
+
 
         if (loginUserInfo!=null) {
 
@@ -45,34 +50,39 @@ public class UserController {
            response.addCookie(password_cookie);
 
             session.setAttribute(Const.CURRENT_USER,loginUserInfo);
-            return "redirect:home";
+            return "home/home";
         }
         else {
             System.out.println("============啊啊=======");
             return "login";
         }
     }
-    @RequestMapping("home")
-    public String home(){
-        return "home";
-    }
 
+
+
+    /**
+     *
+     *用户列表
+     *
+     **/
     @RequestMapping("find")
     public  String findAll(HttpSession session){
         List<UserInfo> userInfoList =userService.findAll();
 
         session.setAttribute("userInfolist",userInfoList);
-        return "usermss";
+        return "user/usermss";
     }
-
-
-
-
+    /**
+     *
+     * 添加用户
+     *
+     */
 
     @RequestMapping(value = "add",method = RequestMethod.GET)
     public  String add( ){
 
-        return "register";
+
+        return "user/useradd";
 
     }
 
@@ -112,29 +122,41 @@ public class UserController {
      *
      *用户修改
      */
-    @RequestMapping(value = "update/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "add/{id}",method = RequestMethod.GET)
     public  String Update(@PathVariable("id") Integer userId, HttpServletRequest request ){
 
         UserInfo userInfo=  userService.findUserById(userId);
 
-        request.setAttribute("userinfo",userInfo);
+        request.setAttribute("userInfo",userInfo);
 
 
-        return "userupdate";
+        return "user/useradd";
     }
-    @RequestMapping(value = "update/{id}",method = RequestMethod.POST)
+    @RequestMapping(value = "add/{id}",method = RequestMethod.POST)
     public  String Update(UserInfo userInfo , HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/html; charset=UTF-8");
 
+        if(userInfo.getId()!=null) {
+            int count = userService.updateUser(userInfo);
+            if (count > 0) {
+                return "redirect: /user/find";
+            }
 
-        int count=userService.updateUser(userInfo);
-        if(count>0)
-        {
-            return "redirect: /user/find";
+            return "user/add";
         }
+        else {
+          /*  int count= userService.addUser(userInfo);
+            if (count>0)
+                System.out.println("chenggong");
+            else
+                System.out.println("shibai");
 
-        return "userupdate";
+            return "redirect: /user/find";*/
+            add();
+
+        }
+        return null;
     }
 
 

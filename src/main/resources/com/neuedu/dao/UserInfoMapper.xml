@@ -47,30 +47,31 @@
     -->
     update neuedu_user
     <set>
-      <if test="username!=null">
-    username = #{username,jdbcType=VARCHAR},
+      <if test="userInfo.username!=null and userInfo.username!=''">
+      username = #{userInfo.username,jdbcType=VARCHAR},
       </if>
-      <if test="password!=null">
-      password = #{password,jdbcType=VARCHAR},
+
+      <if test="userInfo.password !=null and userInfo.password!=''">
+      password = #{userInfo.password,jdbcType=VARCHAR},
       </if>
-      <if test="email!=null">
-      email = #{email,jdbcType=VARCHAR},
+      <if test="userInfo.email !=null and userInfo.email !=''">
+      email = #{userInfo.email,jdbcType=VARCHAR},
       </if>
-      <if test="phone!=null">
-      phone = #{phone,jdbcType=VARCHAR},
+      <if test="userInfo.phone !=null and userInfo.phone !=''">
+      phone = #{userInfo.phone,jdbcType=VARCHAR},
       </if>
-      <if test="question!=null">
-      question = #{question,jdbcType=VARCHAR},
+      <if test="userInfo.question !=null and userInfo.question !=''">
+      question = #{userInfo.question,jdbcType=VARCHAR},
       </if>
-      <if test="answer!=null">
-      answer = #{answer,jdbcType=VARCHAR},
+      <if test="userInfo.answer !=null and userInfo.answer !=''">
+      answer = #{userInfo.answer,jdbcType=VARCHAR},
       </if>
-      <if test="role!=null">
-      role = #{role,jdbcType=INTEGER},
+      <if test="userInfo.role != null and userInfo.role !=''">
+      role = #{userInfo.role,jdbcType=INTEGER},
       </if>
       update_time = now()
     </set>
-    where id = #{id,jdbcType=INTEGER}
+    where id = #{userInfo.id,jdbcType=INTEGER}
   </update>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     <!--

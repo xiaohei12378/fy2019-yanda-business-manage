@@ -30,14 +30,14 @@ public class CategoryController {
         List<Category> categoryList =categoryService.findAll();
 
         session.setAttribute("categorylist",categoryList);
-        return "categorylist";
+        return "/category/list";
     }
 
     /**
      *
      * 类别修改
      */
-    @RequestMapping(value = "update/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "add/{id}",method = RequestMethod.GET)
     public  String Update(@PathVariable("id") Integer categoryId, HttpServletRequest request ){
 
       Category category=  categoryService.findCategoryById(categoryId);
@@ -45,21 +45,26 @@ public class CategoryController {
       request.setAttribute("category",category);
 
 
-        return "categoryupdate";
+        return "category/categoryadd";
     }
-    @RequestMapping(value = "update/{id}",method = RequestMethod.POST)
+    @RequestMapping(value = "add/{id}",method = RequestMethod.POST)
     public  String Update(Category category , HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/html; charset=UTF-8");
 
+      if(category.getId()!=null) {
+          int count = categoryService.updateCategory(category);
+          if (count > 0) {
+              return "redirect: /user/category/find";
+          }
 
-        int count=categoryService.updateCategory(category);
-        if(count>0)
-        {
-            return "redirect: /user/category/find";
-        }
+          return "categoryadd";
+      }
+      else {
+          add();
+          return null;
+      }
 
-        return "categoryupdate";
     }
 
 
@@ -88,7 +93,7 @@ public class CategoryController {
 @RequestMapping(value = "add",method = RequestMethod.GET)
 public  String add( ){
 
-    return "categoryadd";
+    return "category/categoryadd";
 
 }
 

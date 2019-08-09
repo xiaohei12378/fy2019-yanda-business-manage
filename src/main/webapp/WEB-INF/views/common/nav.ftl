@@ -5,15 +5,15 @@
                 卖家管理系统
             </a>
         </li>
-        <li>
+     <#--   <li>
             <a href="/sell/seller/order/list"><i class="fa fa-fw fa-list-alt"></i> 订单</a>
-        </li>
+        </li>-->
         <li class="dropdown open">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-fw fa-plus"></i> 商品 <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-fw fa-plus"></i> 用户 <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">操作</li>
-                <li><a href="">列表</a></li>
-                <li><a href="">新增</a></li>
+                <li><a href="/user/find">列表</a></li>
+                <li><a href="/user/add">添加用户</a></li>
             </ul>
         </li>
         <li class="dropdown open">
@@ -21,7 +21,15 @@
             <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">操作</li>
                 <li><a href="category/find">列表</a></li>
-                <li><a href="">新增</a></li>
+                <li><a href="/user/category/add">添加种类</a></li>
+            </ul>
+        </li>
+        <li class="dropdown open">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-fw fa-plus"></i> 商品 <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">操作</li>
+                <li><a href="/user/product/find">列表</a></li>
+                <li><a href="/user/product/add">添加商品</a></li>
             </ul>
         </li>
 

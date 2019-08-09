@@ -4,8 +4,6 @@
     <title>登录</title>
   </head>
   <body>
-
-
  <form action="" method="post">
 
    <span>用户名:</span>
